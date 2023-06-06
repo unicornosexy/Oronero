@@ -195,3 +195,12 @@ html{
       text-align: center;
     }
     
+.rosso {
+      background-color: red;
+      color: white;
+    }
+
+    .verde {
+      background-color: green;
+      color: white;
+    }

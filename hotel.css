@@ -5,7 +5,25 @@ html{
     body {
         margin: 0;
         padding: 0;
+
+        position: relative;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        background-image : url(oronero.jpg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
     }
+
+    .contatti{
+        color:white;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
     section{
         position: relative;
         display:flex;
@@ -115,92 +133,185 @@ html{
         color: white;
     }
 
-    .menu {
-        margin: 0;
-        overflow: hidden;
-        background-color:black;
-       
+    
+
+      /* calendario */
+    .bianco{
+        color:white;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+      .rosso{
+        background-color: goldenrod;
+     }
+     .verde{
+        background-color: grey;
+     }
+     .tabella{
+
+        position: relative;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        background-image : url(oronero.jpg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        
+     }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        
+      }
+      
+      .menu li {
+        margin: 0 10px;
       }
       
       .menu a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
+        display: block;
         text-decoration: none;
       }
-      .dropdown {
-        float: left;
+      
+      .menu img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .menu img:hover {
+        opacity: 0.8;
+      }
+      
+      #borderimg1 { 
+        border: 20px solid transparent;
+        padding: 0px;
+        border-image: url(abc.jpg) 40 round;
+      }
+      
+      /* prezzi */
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .room {
+        text-align: center;
+        margin: 20px;
+      }
+      
+      .room img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .room h2 {
+        margin-top: 10px;
+      }
+      
+      .room p {
+        margin-bottom: 5px;
+      }
+      
+      .room .price {
+        font-weight: bold;
+      }
+
+      /*FAQ*/ 
+      .container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      
+      .faq {
+        max-width: 600px;
+        margin-top: 20px;
+      }
+      
+      .question {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      
+      .question h3 {
+        margin-bottom: 10px;
+      }
+      
+      .question p {
+        margin-bottom: 5px;
+      }
+
+      /* recensioni */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      
+      .review {
+        max-width: 600px;
+        margin-top: 20px;
+      }
+      
+      .review h3 {
+        margin-bottom: 10px;
+      }
+      
+      .stars {
+        display: inline-block;
+      }
+      
+      .star {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: gold;
+        margin-right: 2px;
+      }
+      
+      .star.half {
+        background-color: transparent;
+        position: relative;
         overflow: hidden;
       }
-      .dropdown .dropbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-      .menu a:hover, .dropdown:hover .dropbtn {
-        background-color: white;
-        color: black;
-      }
-      .dropdown-content {
-        display: none;
+      
+      .star.half::before {
+        content: "";
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
+        width: 10px;
+        height: 20px;
+        background-color: gold;
+        right: 0;
+        transform: skewX(30deg);
       }
       
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      button{
-        background-color: red;
-        color: white ;
-        padding: 12px 16px;
-        text-align: left;
-        font-family: inherit;
-        font-size: 16px;  
-        border: none;
-        outline: none;
+      .star.empty {
+        background-color: transparent;
       }
       
-      .dropdown-content a:hover {
-        background-color: #ddd;
+      .review p {
+        margin-bottom: 5px;
       }
       
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-    /* Stile del calendario */
-    table.calendar {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    table.calendar th,
-    table.calendar td {
-      border: 1px solid #ccc;
-      padding: 5px;
-      text-align: center;
-    }
-    
-.rosso {
-      background-color: red;
-      color: white;
-    }
-
-    .verde {
-      background-color: green;
-      color: white;
-    }

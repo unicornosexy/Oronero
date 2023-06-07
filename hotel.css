@@ -16,14 +16,6 @@ html{
         background-size: cover;
     }
 
-    .contatti{
-        color:white;
-        margin-left: 300px;
-        margin-right: 300px;
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
     section{
         position: relative;
         display:flex;
@@ -162,7 +154,7 @@ html{
         
      }
 
-      .containerrec {
+      .container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -262,7 +254,7 @@ html{
       }
 
       /* recensioni */
-      .container {
+      .containerrec {
         display: flex;
         justify-content: center;
         align-items: center;
